@@ -1,0 +1,239 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARTER</title>
+    <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Barter</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#workflow">Workflow</a></li>
+                    <li><a href="#tech">Tech Stack</a></li>
+                    <li>
+                        <div class="btn-group">
+                            <a href="#" class="btn login">Login</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btn-group">
+                            <a href="#" class="btn signup">Signup</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="container">
+                <div class="home-content">
+                    <h1>Exchange Products of Equal Value</h1>
+                    <p>Barter lets you exchange items you no longer need for something useful — all without spending money. It’s a secure, hassle-free way to trade with others and find real value in what you already have</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn primary-btn">Get Started</a>
+                        <a href="#about" class="btn secondary-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="Barter Exchange">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Barter</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Barter is a modern platform that facilitates the exchange of products between users based on equal value. Our system eliminates the need for cash transactions, allowing you to trade items you no longer need for things you want.</p>
+                        <p>With our advanced matching algorithm, we help you find the perfect trade partners and ensure fair exchanges based on market values.</p>
+                        <ul class="features">
+                            <li><i class="fas fa-check-circle"></i> Secure product exchanges</li>
+                            <li><i class="fas fa-check-circle"></i> Value-based matching</li>
+                            <li><i class="fas fa-check-circle"></i> User rating system</li>
+                            <li><i class="fas fa-check-circle"></i> Dispute resolution</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="About Barter">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow Section -->
+        <section id="workflow" class="section workflow-section dark-section">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>List Your Item</h3>
+                        <p>Upload details and photos of the product you want to exchange, along with its estimated value.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Find Matches</h3>
+                        <p>Our system shows you items of similar value that other users are willing to exchange.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Initiate Trade</h3>
+                        <p>Send a trade request to the owner of the item you're interested in.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Complete Exchange</h3>
+                        <p>Arrange a safe meeting point or shipping method to complete the exchange.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="tech" class="section tech-section">
+            <div class="container">
+                <h2 class="section-title">Our Tech Stack</h2>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <i class="fab fa-python"></i>
+                        <h3>Django</h3>
+                        <p>Powerful Python framework for backend development and business logic</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <p>Modern semantic markup for structure and content</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <p>Styling and responsive design for all devices</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Interactive elements and dynamic content</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section dark-section">
+            <div class="start-container">
+                <h2>Ready to Start Trading?</h2>
+                <p>Join our community of smart traders today</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn primary-btn">Sign Up Free</a>
+                    <a href="#" class="btn secondary-btn">Login</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Barter</a>
+                    <p>Exchange products of equal value without cash transactions</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#workflow">How It Works</a></li>
+                        <li><a href="#tech">Technology</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> barter@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Barter. All rights reserved.</p>
+                <div class="social-links" style="text-decoration: none;">
+                    <a href="#" style="text-decoration: none;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="text-decoration: none;"><i class="fab fa-instagram"></i></a>
+                    <a href="#" style="text-decoration: none;"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Barter</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn primary-btn">Login</button>
+            </form>
+            <p class="form-footer">Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create an Account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirm">Confirm Password</label>
+                    <input type="password" id="signupConfirm" required>
+                </div>
+                <button type="submit" class="btn primary-btn">Sign Up</button>
+            </form>
+            <p class="form-footer">Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </div>
+    </div>
+    <script src="{% static 'js/landing.js' %}"></script>
+</body>
+</html>
