@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barter | Sign Up</title>
+    <link rel="stylesheet" href="{% static 'css/auth.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-logo">
+                <i class="fas fa-exchange-alt"></i>
+                <h1>Barter</h1>
+            </div>
+            <div class="auth-content">
+                <h2>Start trading today</h2>
+                <p>Join our community of traders exchanging goods without cash transactions.</p>
+                <div class="auth-features">
+                    <div class="feature">
+                        <i class="fas fa-handshake"></i>
+                        <span>Fair exchanges</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Local traders</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Value tracking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="auth-right">
+            <div class="auth-form-container">
+                <div class="auth-header">
+                    <h2>Create Account</h2>
+                    <p>Join the Barter community</p>
+                </div>
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Create a password" required>
+                            <i class="fas fa-eye toggle-password" onclick="togglePassword('password', this)"></i>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-meter"></div>
+                            <span class="strength-text">Password strength: <span id="strengthValue">weak</span></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                            <i class="fas fa-eye toggle-password" onclick="togglePassword('confirmPassword', this)"></i>
+                        </div>
+                    </div>
+                    <div class="form-group terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <button type="submit" class="auth-btn">Sign Up</button>
+                    <div class="auth-divider">
+                        <span>or sign up with</span>
+                    </div>
+                    <div class="social-login">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button type="button" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </button>
+                    </div>
+                    <div class="auth-footer">
+                        Already have an account? <a href="{% url 'login' %}">Log in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>

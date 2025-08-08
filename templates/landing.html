@@ -22,12 +22,12 @@
                     <li><a href="#tech">Tech Stack</a></li>
                     <li>
                         <div class="btn-group">
-                            <a href="#" class="btn login">Login</a>
+                            <a href="{% url 'login' %}" class="btn login">Login</a>
                         </div>
                     </li>
                     <li>
                         <div class="btn-group">
-                            <a href="#" class="btn signup">Signup</a>
+                            <a href="{% url 'signup' %}"  class="btn signup">Signup</a>
                         </div>
                     </li>
                 </ul>
@@ -48,7 +48,7 @@
                     <h1>Exchange Products of Equal Value</h1>
                     <p>Barter lets you exchange items you no longer need for something useful — all without spending money. It’s a secure, hassle-free way to trade with others and find real value in what you already have</p>
                     <div class="cta-buttons">
-                        <a href="#" class="btn primary-btn">Get Started</a>
+                        <a href="{% url 'signup' %}" class="btn primary-btn">Get Started</a>
                         <a href="#about" class="btn secondary-btn">Learn More</a>
                     </div>
                 </div>
@@ -144,8 +144,8 @@
                 <h2>Ready to Start Trading?</h2>
                 <p>Join our community of smart traders today</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn primary-btn">Sign Up Free</a>
-                    <a href="#" class="btn secondary-btn">Login</a>
+                    <a href="{% url 'signup' %}" class="btn primary-btn">Sign Up Free</a>
+                    <a href="{% url 'login' %}" class="btn secondary-btn">Login</a>
                 </div>
             </div>
         </section>
